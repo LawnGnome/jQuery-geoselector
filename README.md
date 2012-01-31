@@ -47,7 +47,7 @@ The options available are:
 	<thead>
 		<tr>
 			<th>Option</th>
-			<th>Default<th>
+			<th>Default</th>
 			<th>Description</th>
 		</tr>
 	</thead>
