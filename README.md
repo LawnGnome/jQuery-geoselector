@@ -54,7 +54,7 @@ The options available are:
 	<tbody>
 		<tr>
 			<td>countrySelector</td>
-			<td>`*[name='country']`</td>
+			<td><code>*[name='country']</code></td>
 			<td>
 				The selector used to find the country element to replace. This
 				should match only one element.
@@ -62,7 +62,7 @@ The options available are:
 		</tr>
 		<tr>
 			<td>stateSelector</td>
-			<td>`*[name='state']`</td>
+			<td><code>*[name='state']</code></td>
 			<td>
 				The selector used to find the state element to replace. This
 				should match only one element.
@@ -70,7 +70,7 @@ The options available are:
 		</tr>
 		<tr>
 			<td>data</td>
-			<td>`divisions.json`</td>
+			<td><code>divisions.json</code></td>
 			<td>
 				The path to the GeoNames JSON file. This needs to be relative
 				to the HTML page, not the JavaScript file, since it's loaded
@@ -79,12 +79,12 @@ The options available are:
 		</tr>
 		<tr>
 			<td>defaultCountry</td>
-			<td>`Australia`</td>
+			<td><code>Australia</code></td>
 			<td>The default country to select.</td>
 		</tr>
 		<tr>
 			<td>defaultState</td>
-			<td>`Western Australia`</td>
+			<td><code>Western Australia</code></td>
 			<td>The default state to select.</td>
 		</tr>
 	</tbody>
