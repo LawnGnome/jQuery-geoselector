@@ -3,7 +3,7 @@ test("Create GeoSelector - Valid country drop-down list", function() {
 });
 
 test("Create GeoSelector - Valid state drop-down list", function() {
-  ok($("*[name='state']"), "Country drop-down list should not be null");
+  ok($("*[name='state']"), "State drop-down list should not be null");
 });
 
 test("Create GeoSelector - Country drop-down list type", function() {
