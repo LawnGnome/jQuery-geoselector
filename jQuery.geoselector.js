@@ -5,7 +5,7 @@
       stateSelector: "*[name='state']",
       data: "divisions.json",
       defaultCountry: "Australia",
-      defaultState: "Western Australia",
+      defaultState: "Western Australia"
     }, options);
 
     var countries = $(settings.countrySelector, this);
