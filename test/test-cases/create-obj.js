@@ -1,4 +1,3 @@
-$("#geoselector-form").geoSelector();
 test("Create GeoSelector - Valid country drop-down list", function() {
   ok($("*[name='country']"), "Country drop-down list should not be null");
 });
