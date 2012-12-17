@@ -24,7 +24,7 @@
       var state = buildSelectionsObj(states);
       
       $.each(data.countries, function (code, name) {
-        var option = $("<option />").text(name).attr("code", code).appendTo(country);
+        var option = $("<option />").text(name).attr("code", code).attr("value", code).appendTo(country);
 
         if (settings.defaultCountry == name) {
           option.attr("selected", "selected");
@@ -38,7 +38,7 @@
             if(!name)
               return true;
             
-            var option = $("<option />").text(name).appendTo(state);
+            var option = $("<option />").text(name).attr("value", name).appendTo(state);
             if (def == name) {
               option.attr("selected", "selected");
             }
