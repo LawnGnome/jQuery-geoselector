@@ -20,16 +20,9 @@
     }
 
     $.getJSON(settings.data, function (data) {
-      var country = $("<select />");
-      $.each(countries[0].attributes, function(index, attribute){
-        country.attr(attribute.nodeName, attribute.nodeValue);
-      });
+      var country = buildSelectionsObj(countries);
+      var state = buildSelectionsObj(states);
       
-      var state = $("<select />");
-      $.each(states[0].attributes, function(index, attribute){
-        state.attr(attribute.nodeName, attribute.nodeValue);
-      });
-
       $.each(data.countries, function (code, name) {
         var option = $("<option />").text(name).attr("code", code).appendTo(country);
 
@@ -64,5 +57,13 @@
         return true;
       });
     });
+    
+    var buildSelectionsObj = function(templateObj){
+      var selectionsObj = $("<select />");
+      $.each(templateObj[0].attributes, function(index, attribute){
+        selectionsObj.attr(attribute.nodeName, attribute.nodeValue);
+      });
+      return selectionsObj;
+    };
   };
 })(jQuery);
