@@ -4,9 +4,26 @@
   <meta charset="ISO-8859-1">
   <title>GeoSelector Unit Tests</title>
   <link rel="stylesheet" href="qunit/qunit.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
   <div id="qunit"></div>
+  <div id="form-section">
+    <form id="geoselector-form">
+      <div>
+        <label for="country">Country</label>
+        <select id="country" name="country"></select>
+      </div>
+      
+      <div>
+        <label for="state">State</label>
+        <select id="state" name="state"></select>
+      </div>
+    </form>
+  </div>
+  
+  <script src="jquery/jquery.js"></script>
   <script src="qunit/qunit.js"></script>
+  <script src="../jQuery.geoselector.js"></script>
 </body>
 </html>
