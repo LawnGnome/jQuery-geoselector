@@ -20,8 +20,15 @@
     }
 
     $.getJSON(settings.data, function (data) {
-      var country = $("<select />").attr("name", countries.attr("name"));
-      var state = $("<select />").attr("name", states.attr("name"));
+      var country = $("<select />");
+      $.each(countries[0].attributes, function(index, attribute){
+        country.attr(attribute.nodeName, attribute.nodeValue);
+      });
+      
+      var state = $("<select />");
+      $.each(states[0].attributes, function(index, attribute){
+        state.attr(attribute.nodeName, attribute.nodeValue);
+      });
 
       $.each(data.countries, function (code, name) {
         var option = $("<option />").text(name).attr("code", code).appendTo(country);
